@@ -3,35 +3,77 @@
     <html>
     <head>
       <meta charset="utf-8">
-      <title>Skate Finder Dashboard</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pabloskates.com Used Skate Finder</title>
       <style>
+        :root {
+          --accent: #ff6a00;
+          --bg: #f7f7f7;
+          --card: #ffffff;
+          --text: #111111;
+          --muted: #555555;
+          --pill: #f0f0f0;
+        }
         body {
           font-family: Arial, sans-serif;
           padding: 18px;
-          background: #f7f7f7;
+          background: var(--bg);
+          color: var(--text);
         }
         .header {
           display:flex;
-          align-items:baseline;
-          gap:12px;
+          flex-direction: column;
+          gap: 8px;
           margin-bottom: 14px;
+        }
+        .brandline {
+          display:flex;
+          align-items: baseline;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 999px;
+          background: var(--accent);
+          box-shadow: 0 0 0 3px rgba(255,106,0,0.18);
         }
         .header h1 {
           margin:0;
           font-size: 20px;
         }
-        .header .small {
-          color:#555;
+        .small {
+          color: var(--muted);
           font-size: 13px;
+          line-height: 1.35;
+        }
+        .stamp {
+          font-weight: 700;
+          color: var(--text);
+          background: rgba(255,106,0,0.14);
+          padding: 2px 8px;
+          border-radius: 999px;
+          display: inline-block;
+        }
+        .autoupdate {
+          display:inline-block;
+          margin-left: 8px;
+          padding: 2px 8px;
+          border-radius: 999px;
+          background: var(--pill);
+          color: var(--muted);
+          font-size: 12px;
         }
         .card {
           display:flex;
           gap:14px;
-          background:white;
+          background: var(--card);
           border-radius: 14px;
           padding: 12px;
           margin-bottom: 12px;
           box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+          border-left: 4px solid rgba(255,106,0,0.22);
         }
         .topline {
           display:flex;
@@ -44,17 +86,17 @@
           font-weight:700;
         }
         .tier, .search {
-          color:#555;
+          color: var(--muted);
           font-size: 12px;
           padding: 2px 8px;
-          background:#f0f0f0;
+          background: var(--pill);
           border-radius: 999px;
         }
         .title {
           display:block;
           font-size: 14px;
           font-weight: 700;
-          color:#111;
+          color: var(--text);
           text-decoration:none;
           margin-bottom: 6px;
         }
@@ -71,16 +113,36 @@
           font-size: 12px;
           line-height: 1.35;
         }
+
+        /* Mobile layout: stack image above content */
+        @media (max-width: 700px) {
+          body {
+            padding: 12px;
+          }
+          .card {
+            flex-direction: column;
+          }
+          .img img {
+            width: 100% !important;
+            max-width: 100%;
+          }
+        }
       </style>
     </head>
     <body>
       <div class="header">
-        <h1>Skate Finder</h1>
-        <div class="small">Live results from eBay Browse API. Open listings in a new tab.</div>
+        <div class="brandline">
+          <div class="dot"></div>
+          <h1>Pabloskates.com Used Skate Finder</h1>
+        </div>
+        <div class="small">
+          Live results from eBay Browse API fetched at <span class="stamp">04 Feb 2026, 15:40</span>. Open listings in a new tab.
+          <span class="autoupdate">Auto-updates 4 times daily</span>
+        </div>
       </div>
       
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/cscAAeSwtiZpY~YA/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/cscAAeSwtiZpY~YA/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 21</div>
@@ -94,7 +156,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/pk8AAOSwsjJm5WO6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/pk8AAOSwsjJm5WO6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 19</div>
@@ -108,7 +170,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/FOUAAeSwMIJpIJF3/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/FOUAAeSwMIJpIJF3/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 18</div>
@@ -122,7 +184,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/OG4AAeSwea1pe4pd/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/OG4AAeSwea1pe4pd/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 18</div>
@@ -136,7 +198,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/Ar4AAeSwjuFpfafP/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/Ar4AAeSwjuFpfafP/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 17</div>
@@ -150,7 +212,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/r2gAAeSwEb5pf3Hv/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/r2gAAeSwEb5pf3Hv/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 17</div>
@@ -164,7 +226,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/uiMAAeSwoKxpZMuP/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/uiMAAeSwoKxpZMuP/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 16</div>
@@ -178,21 +240,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/X5EAAeSwHzRn0fsH/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
-          <div class="body">
-            <div class="topline">
-              <div class="score">Score 16</div>
-              <div class="tier">Tier 2</div>
-              <div class="search">Found in: Nike Ice Skates</div>
-            </div>
-            <a class="title" href="https://www.ebay.co.uk/itm/187038724989?_skw=nike+ice+skates&amp;hash=item2b8c60737d:g:X5EAAeSwHzRn0fsH" target="_blank" rel="noopener noreferrer">Nike Bauer Charleston Wolverines Ice Hockey Windbreaker Size XL</a>
-            <div class="meta">Total: £34.84 | Tier 2 | Score 16</div>
-            <div class="reasons">nike bauer +6<br>size unknown +0<br>total £34.84, tier 2 ceiling £80, price &lt;= 50% of ceiling (+10)</div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/3NwAAeSw9ipn7pus/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/3NwAAeSw9ipn7pus/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 16</div>
@@ -206,7 +254,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/9LoAAeSw-ZRn2YQR/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/9LoAAeSw-ZRn2YQR/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 15</div>
@@ -220,7 +268,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/rSYAAeSwmuBpfg55/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/rSYAAeSwmuBpfg55/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 15</div>
@@ -234,7 +282,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/24oAAeSwdyZpfMjx/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/24oAAeSwdyZpfMjx/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 15</div>
@@ -248,7 +296,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/RtAAAeSwhD1pWEp6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/RtAAAeSwhD1pWEp6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 15</div>
@@ -262,7 +310,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/mQkAAeSw5itpe2WM/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/mQkAAeSw5itpe2WM/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 15</div>
@@ -276,7 +324,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/Jx4AAeSwUdlpJufh/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/Jx4AAeSwUdlpJufh/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 14</div>
@@ -290,7 +338,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/BEQAAeSwZ5lo7-ET/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/BEQAAeSwZ5lo7-ET/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 14</div>
@@ -304,21 +352,21 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/fKIAAeSwdSBpa5p8/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/fKIAAeSwdSBpa5p8/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 14</div>
               <div class="tier">Tier 3</div>
               <div class="search">Found in: Nike Ice Skates</div>
             </div>
-            <a class="title" href="https://www.ebay.co.uk/itm/127629382512?_skw=nike+ice+skates&amp;hash=item1db74dd370:g:fKIAAeSwdSBpa5p8&amp;amdata=enc%3AAQALAAAA8DZq0hFgvSYlgrFkWCFZ3z3XXXjc3ajvZcxS04GSp%2FJ14I4AASHQjfp8%2F2y8J0FIVq0V%2FMRWkeCqgb%2BlDo3%2BgiJCTi1V93f9J4lVcK30XuFMEgdfz%2BPWMWgLy%2BmA2xkMI%2B6CmtCX9z1tJjOwmpSbbNooTlFEYOgGX%2BeO9DXcqzBwY4Q7qlr3w5T9FeNsgUDSivt2wYoC7moUAB1C%2FhocVxeYBrWzACNweJnPc%2FBN7NKXWQNyf3LLHf%2FvLXIAGZQ3B6DrwWCht6HGxDvxWxXepTwj6TQ9cDp90ftEoM9b9MpA7QMnSDeQlglCYzxYh3%2Fzog%3D%3D" target="_blank" rel="noopener noreferrer">Nike Quest 3 Ice Hockey Ice Skates Size 2.5 UK EE Fit Rare Skates Vgc</a>
+            <a class="title" href="https://www.ebay.co.uk/itm/127629382512?_skw=nike+ice+skates&amp;hash=item1db74dd370:g:fKIAAeSwdSBpa5p8&amp;amdata=enc%3AAQALAAAA8DZq0hFgvSYlgrFkWCFZ3z3XXXjc3ajvZcxS04GSp%2FJ14I4AASHQjfp8%2F2y8J0FIVq0V%2FMRWkeCqgb%2BlDo3%2BgiJCTi1V93f9J4lVcK30XuFMEgdfz%2BPWMWgLy%2BmA2xkMI%2B6CmtCX9z1tJjOwmpSbbNrlAht%2BXB4aiXi8z521KaRUEO4wY54wS5H3jqAePq1%2FyE9bS4PC%2FwzSUk60KrJi%2BDHJT0dJPTONGpeMyVisxpLiEAhqPXi8ueETgZsUFQQg2hdodPn4gChx%2BzLIo8ZCXja0qS049dAOTjWsxXd1SBXVSrvEoBFDX05VzEvRruiCqQ%3D%3D" target="_blank" rel="noopener noreferrer">Nike Quest 3 Ice Hockey Ice Skates Size 2.5 UK EE Fit Rare Skates Vgc</a>
             <div class="meta">Total: £59.34 | UK5 | Tier 3 | Score 14</div>
             <div class="reasons">nike +3<br>size UK5 +1<br>total £59.34, tier 3 ceiling £120, price &lt;= 50% of ceiling (+10)</div>
           </div>
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/zGgAAeSwHWhpOsTW/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/zGgAAeSwHWhpOsTW/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 13</div>
@@ -332,7 +380,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/Nb4AAeSwUuFpIJek/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/Nb4AAeSwUuFpIJek/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 13</div>
@@ -346,7 +394,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/f3EAAeSw5VFpPsEL/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/f3EAAeSw5VFpPsEL/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 13</div>
@@ -360,7 +408,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/6AMAAOSw62RniZfS/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/6AMAAOSw62RniZfS/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 13</div>
@@ -374,7 +422,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/qeMAAeSwyZNpgIl6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/qeMAAeSwyZNpgIl6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 12</div>
@@ -388,7 +436,7 @@
         </div>
         
         <div class="card">
-          <div class="img"><img src="https://i.ebayimg.com/images/g/m2YAAeSwbodo4652/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="img"><img src="https://i.ebayimg.com/images/g/m2YAAeSwbodo4652/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:12px;"></div>
           <div class="body">
             <div class="topline">
               <div class="score">Score 11</div>
