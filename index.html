@@ -1,0 +1,462 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Skate Finder Dashboard</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 18px;
+          background: #f7f7f7;
+        }
+        .header {
+          display:flex;
+          align-items:baseline;
+          gap:12px;
+          margin-bottom: 14px;
+        }
+        .header h1 {
+          margin:0;
+          font-size: 20px;
+        }
+        .header .small {
+          color:#555;
+          font-size: 13px;
+        }
+        .card {
+          display:flex;
+          gap:14px;
+          background:white;
+          border-radius: 14px;
+          padding: 12px;
+          margin-bottom: 12px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        .topline {
+          display:flex;
+          gap:10px;
+          align-items:center;
+          margin-bottom: 6px;
+          flex-wrap: wrap;
+        }
+        .score {
+          font-weight:700;
+        }
+        .tier, .search {
+          color:#555;
+          font-size: 12px;
+          padding: 2px 8px;
+          background:#f0f0f0;
+          border-radius: 999px;
+        }
+        .title {
+          display:block;
+          font-size: 14px;
+          font-weight: 700;
+          color:#111;
+          text-decoration:none;
+          margin-bottom: 6px;
+        }
+        .title:hover {
+          text-decoration: underline;
+        }
+        .meta {
+          color:#444;
+          font-size: 12px;
+          margin-bottom: 8px;
+        }
+        .reasons {
+          color:#666;
+          font-size: 12px;
+          line-height: 1.35;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="header">
+        <h1>Skate Finder</h1>
+        <div class="small">Live results from eBay Browse API. Open listings in a new tab.</div>
+      </div>
+      
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/lIUAAeSwZH9pWPSc/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 24</div>
+              <div class="tier">Tier 1</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/136914789063?_skw=bauer+ice+skates&amp;hash=item1fe0c1e2c7:g:lIUAAeSwZH9pWPSc" target="_blank" rel="noopener noreferrer">Vintage Bauer Silver Arrow Size 10 Ice Hockey Skates Film Prop</a>
+            <div class="meta">Total: £25.00 | UK10 | Tier 1 | Score 24</div>
+            <div class="reasons">bauer +4<br>size UK10 +10<br>total £25.00, tier 1 ceiling £60, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/YYMAAOSwc59mxlIb/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 22</div>
+              <div class="tier">Tier 1</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/317049528634?_skw=bauer+ice+skates&amp;hash=item49d19fe13a:g:YYMAAOSwc59mxlIb" target="_blank" rel="noopener noreferrer">BAUER  VINTAGE LEATHER ICE  SKATES SIZE 10 WITH BLADE GUARDS</a>
+            <div class="meta">Total: £35.95 | UK10 | Tier 1 | Score 22</div>
+            <div class="reasons">bauer +4<br>size UK10 +10<br>total £35.95, tier 1 ceiling £60, price &lt;= 65% of ceiling (+8)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/cscAAeSwtiZpY~YA/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 21</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates, Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/326951475767?_skw=bauer+ice+skates&amp;hash=item4c1fd39a37:g:cscAAeSwtiZpY~YA" target="_blank" rel="noopener noreferrer">Nike Bauer Supreme 11 Ice Hockey Ice Skates Size 7 Uk  (good used condition)</a>
+            <div class="meta">Total: £63.59 | UK7 | Tier 2 | Score 21</div>
+            <div class="reasons">nike bauer +6<br>supreme hint +3<br>size UK7 +7<br>total £63.59, tier 2 ceiling £80, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/pk8AAOSwsjJm5WO6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 19</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/286060087958?_skw=nike+ice+skates&amp;hash=item429a828a96:g:pk8AAOSwsjJm5WO6" target="_blank" rel="noopener noreferrer">Nike Bauer Supreme  One 90 Skate</a>
+            <div class="meta">Total: £30.41 | Tier 2 | Score 19</div>
+            <div class="reasons">nike bauer +6<br>supreme hint +3<br>size unknown +0<br>total £30.41, tier 2 ceiling £80, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/FOUAAeSwMIJpIJF3/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 18</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127513957487?_skw=bauer+ice+skates&amp;hash=item1db06c946f:g:FOUAAeSwMIJpIJF3" target="_blank" rel="noopener noreferrer">Bauer Vapor X3.5 Ice Skates Hockey Skates Size 4.5 UK Very Worn No Laces</a>
+            <div class="meta">Total: £38.50 | UK5 | Tier 2 | Score 18</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK5 +1<br>total £38.50, tier 2 ceiling £80, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/OG4AAeSwea1pe4pd/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 18</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127653096757?_skw=nike+ice+skates&amp;hash=item1db8b7ad35:g:OG4AAeSwea1pe4pd" target="_blank" rel="noopener noreferrer">Nike Bauer Supreme One05 Ice Hockey Ice Skates Size 1.5 UK Vgc</a>
+            <div class="meta">Total: £50.87 | UK5 | Tier 2 | Score 18</div>
+            <div class="reasons">nike bauer +6<br>supreme hint +3<br>size UK5 +1<br>total £50.87, tier 2 ceiling £80, price &lt;= 65% of ceiling (+8)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/Ar4AAeSwjuFpfafP/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 17</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Bauer Ice Skates, Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/236610124504?_skw=bauer+ice+skates&amp;hash=item37170ffad8:g:Ar4AAeSwjuFpfafP" target="_blank" rel="noopener noreferrer">Nike Bauer Ignite 22 Ice Hockey Skates UK 5.5 Great Skates</a>
+            <div class="meta">Total: £56.98 | UK5 | Tier 3 | Score 17</div>
+            <div class="reasons">nike bauer +6<br>size UK5 +1<br>total £56.98, tier 3 ceiling £120, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/r2gAAeSwEb5pf3Hv/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 17</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Bauer Ice Skates, Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/397559644581?_skw=bauer+ice+skates&amp;hash=item5c9066c1a5:g:r2gAAeSwEb5pf3Hv" target="_blank" rel="noopener noreferrer">Nike Quest Ice Skates UK Size 11.5 V2 Hockey Skates Quad Skates</a>
+            <div class="meta">Total: £87.60 | UK11 | Tier 3 | Score 17</div>
+            <div class="reasons">nike +3<br>size UK11 +9<br>total £87.60, tier 3 ceiling £120, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/uiMAAeSwoKxpZMuP/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 16</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/198022395761?_skw=nike+ice+skates&amp;hash=item2e1b0df771:g:uiMAAeSwoKxpZMuP" target="_blank" rel="noopener noreferrer">Nike Bauer Supreme ONE05 Ice Hockey Skates, Uk 3.5</a>
+            <div class="meta">Total: £30.08 | UK3 | Tier 2 | Score 16</div>
+            <div class="reasons">nike bauer +6<br>supreme hint +3<br>size UK3 -3<br>total £30.08, tier 2 ceiling £80, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/X5EAAeSwHzRn0fsH/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 16</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/187038724989?_skw=nike+ice+skates&amp;hash=item2b8c60737d:g:X5EAAeSwHzRn0fsH" target="_blank" rel="noopener noreferrer">Nike Bauer Charleston Wolverines Ice Hockey Windbreaker Size XL</a>
+            <div class="meta">Total: £34.84 | Tier 2 | Score 16</div>
+            <div class="reasons">nike bauer +6<br>size unknown +0<br>total £34.84, tier 2 ceiling £80, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/3NwAAeSw9ipn7pus/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 16</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/397052300482?_skw=bauer+ice+skates&amp;hash=item5c72294cc2:g:3NwAAeSw9ipn7pus" target="_blank" rel="noopener noreferrer">Bauer Ice Hockey Skates Vapor Ti / T1 UK5.5 Eu 38.5 US 6</a>
+            <div class="meta">Total: £48.70 | UK5 | Tier 2 | Score 16</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK5 +1<br>total £48.70, tier 2 ceiling £80, price &lt;= 65% of ceiling (+8)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/9LoAAeSw-ZRn2YQR/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 15</div>
+              <div class="tier">Tier 1</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/406189286517?_skw=bauer+ice+skates&amp;hash=item5e92c4a475:g:9LoAAeSw-ZRn2YQR" target="_blank" rel="noopener noreferrer">Ladies Bauer Ice Skates Pro Team 25 Size UK 6 - Good Condition</a>
+            <div class="meta">Total: £30.40 | UK6 | Tier 1 | Score 15</div>
+            <div class="reasons">bauer +4<br>size UK6 +3<br>total £30.40, tier 1 ceiling £60, price &lt;= 65% of ceiling (+8)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/rSYAAeSwmuBpfg55/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 15</div>
+              <div class="tier">Tier 1</div>
+              <div class="search">Found in: Bauer Ice Skates, Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/297986947544?_skw=bauer+ice+skates&amp;hash=item456167f9d8:g:rSYAAeSwmuBpfg55" target="_blank" rel="noopener noreferrer">Nike - Bauer Supreme 11 Ice Hockey Skates - UK 6 - Black / Grey</a>
+            <div class="meta">Total: £43.95 | UK6 | Tier 1 | Score 15</div>
+            <div class="reasons">bauer +4<br>supreme hint +3<br>size UK6 +3<br>total £43.95, tier 1 ceiling £60, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/24oAAeSwdyZpfMjx/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 15</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/317821837035?_skw=bauer+ice+skates&amp;hash=item49ffa85eeb:g:24oAAeSwdyZpfMjx" target="_blank" rel="noopener noreferrer">Bauer SFL Vapor Silver Ice Skates Men&#x27;s  Size 6.5</a>
+            <div class="meta">Total: £53.85 | UK6 | Tier 2 | Score 15</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK6 +3<br>total £53.85, tier 2 ceiling £80, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/RtAAAeSwhD1pWEp6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 15</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/358077801175?_skw=bauer+ice+skates&amp;hash=item535f19a2d7:g:RtAAAeSwhD1pWEp6" target="_blank" rel="noopener noreferrer">Bauer Vapor Elite Hokey Skates UK Size 6.5</a>
+            <div class="meta">Total: £61.28 | UK6 | Tier 2 | Score 15</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK6 +3<br>total £61.28, tier 2 ceiling £80, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/mQkAAeSw5itpe2WM/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 15</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/397548912192?_skw=bauer+ice+skates&amp;hash=item5c8fc2fe40:g:mQkAAeSw5itpe2WM" target="_blank" rel="noopener noreferrer">Bauer Supreme 1S Ice Hockey Skates | Box Size 8 | Used Pro Stock Senior</a>
+            <div class="meta">Total: £80.00 | UK8 | Tier 2 | Score 15</div>
+            <div class="reasons">bauer +4<br>supreme hint +3<br>size UK8 +8<br>total £80.00, tier 2 ceiling £80, price &lt;= ceiling (+0)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/Jx4AAeSwUdlpJufh/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 14</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127526008165?_skw=nike+ice+skates&amp;hash=item1db1247565:g:Jx4AAeSwUdlpJufh" target="_blank" rel="noopener noreferrer">Nike Quest V2 Ice Hockey Ice Skates Size 2.5 UK EU 35 Fit EE</a>
+            <div class="meta">Total: £42.24 | UK5 | Tier 3 | Score 14</div>
+            <div class="reasons">nike +3<br>size UK5 +1<br>total £42.24, tier 3 ceiling £120, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/BEQAAeSwZ5lo7-ET/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 14</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127433604800?_skw=nike+ice+skates&amp;hash=item1daba27ec0:g:BEQAAeSwZ5lo7-ET" target="_blank" rel="noopener noreferrer">Nike Quest V2 Ice Hockey Ice Skates Size 4.5 UK (EE Fit ) Rare Skates</a>
+            <div class="meta">Total: £48.90 | UK5 | Tier 3 | Score 14</div>
+            <div class="reasons">nike +3<br>size UK5 +1<br>total £48.90, tier 3 ceiling £120, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/fKIAAeSwdSBpa5p8/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 14</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127629382512?_skw=nike+ice+skates&amp;hash=item1db74dd370:g:fKIAAeSwdSBpa5p8&amp;amdata=enc%3AAQALAAAA8DZq0hFgvSYlgrFkWCFZ3z3XXXjc3ajvZcxS04GSp%2FJ14I4AASHQjfp8%2F2y8J0FIVq0V%2FMRWkeCqgb%2BlDo3%2BgiJCTi1V93f9J4lVcK30XuFMEgdfz%2BPWMWgLy%2BmA2xkMI%2B6CmtCX9z1tJjOwmpSbbNqPtEj1x%2BtRZf5YaC4ypWU7XKxTITqXpuloBZvaZ%2BCtHCdyyBzySFRXTAH5LFpkFNa0oTuMahAhwGpBTcj1Pu16u7hA3QQ%2Bxw3dUNPWeaO0W5DJP9%2BjWQJcgvmjZhQ%2Bvjfpiqc3DBVA40H2Hlhsz8nZp8BKe8bVU1h04U%2FUTYKkuA%3D%3D" target="_blank" rel="noopener noreferrer">Nike Quest 3 Ice Hockey Ice Skates Size 2.5 UK EE Fit Rare Skates Vgc</a>
+            <div class="meta">Total: £59.34 | UK5 | Tier 3 | Score 14</div>
+            <div class="reasons">nike +3<br>size UK5 +1<br>total £59.34, tier 3 ceiling £120, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/zGgAAeSwHWhpOsTW/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 13</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127605469675?_skw=bauer+ice+skates&amp;hash=item1db5e0f1eb:g:zGgAAeSwHWhpOsTW" target="_blank" rel="noopener noreferrer">Bauer Vapor X2.5 Ice Hockey Ice Skates Size UK 2.5 yellow laces</a>
+            <div class="meta">Total: £31.84 | UK2 | Tier 2 | Score 13</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK2 -4<br>total £31.84, tier 2 ceiling £80, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/Nb4AAeSwUuFpIJek/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 13</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127513998888?_skw=bauer+ice+skates&amp;hash=item1db06d3628:g:Nb4AAeSwUuFpIJek" target="_blank" rel="noopener noreferrer">Bauer Vapor X200 Ice Hockey Ice Skates Size 3.5 UK Good Condition</a>
+            <div class="meta">Total: £57.84 | UK5 | Tier 2 | Score 13</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK5 +1<br>total £57.84, tier 2 ceiling £80, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/f3EAAeSw5VFpPsEL/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 13</div>
+              <div class="tier">Tier 2</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/127562111028?_skw=bauer+ice+skates&amp;hash=item1db34b5834:g:f3EAAeSw5VFpPsEL" target="_blank" rel="noopener noreferrer">Bauer Vapor X1.0 Ice Hockey Ice Skates Size 5.5 UK Very Rare Skates</a>
+            <div class="meta">Total: £59.34 | UK5 | Tier 2 | Score 13</div>
+            <div class="reasons">bauer +4<br>vapor hint +3<br>size UK5 +1<br>total £59.34, tier 2 ceiling £80, price &lt;= 80% of ceiling (+5)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/6AMAAOSw62RniZfS/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 13</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/326806765858?_skw=bauer+ice+skates&amp;hash=item4c17338122:g:6AMAAOSw62RniZfS" target="_blank" rel="noopener noreferrer">Bauer 22 Ice Hockey Skates ice skating boots UK 5</a>
+            <div class="meta">Total: £73.44 | UK5 | Tier 3 | Score 13</div>
+            <div class="reasons">bauer +4<br>size UK5 +1<br>total £73.44, tier 3 ceiling £120, price &lt;= 65% of ceiling (+8)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/qeMAAeSwyZNpgIl6/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 12</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Bauer Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/267567015386?_skw=bauer+ice+skates&amp;hash=item3e4c3ca5da:g:qeMAAeSwyZNpgIl6" target="_blank" rel="noopener noreferrer">Bauer Flexlite 1.0 Ice Hockey Ice Skates Size 6 UK Rare Skates With Green Guards</a>
+            <div class="meta">Total: £105.20 | UK6 | Tier 3 | Score 12</div>
+            <div class="reasons">bauer +4<br>flexlite hint +3<br>size UK6 +3<br>total £105.20, tier 3 ceiling £120, price &lt;= 90% of ceiling (+2)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/r7cAAeSw4AJpZ1O3/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 12</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/116982692574?_skw=nike+ice+skates&amp;hash=item1b3cb63ade:g:r7cAAeSw4AJpZ1O3" target="_blank" rel="noopener noreferrer">Vintage Nike Quest V2 Ice Hockey Skates Size Uk 9.5</a>
+            <div class="meta">Total: £109.91 | UK9 | Tier 3 | Score 12</div>
+            <div class="reasons">nike +3<br>size UK9 +9<br>total £109.91, tier 3 ceiling £120, price &lt;= ceiling (+0)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/m2YAAeSwbodo4652/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 11</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/406266845827?_skw=nike+ice+skates&amp;hash=item5e97641a83:g:m2YAAeSwbodo4652" target="_blank" rel="noopener noreferrer">Nike Quest V2 Ice Hockey Skates Size Uk 4.5</a>
+            <div class="meta">Total: £46.01 | UK4 | Tier 3 | Score 11</div>
+            <div class="reasons">nike +3<br>size UK4 -2<br>total £46.01, tier 3 ceiling £120, price &lt;= 50% of ceiling (+10)</div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img"><img src="https://i.ebayimg.com/images/g/rEMAAeSw2E1oy0Vv/s-l225.jpg" alt="image" style="width:220px;height:auto;border-radius:10px;"></div>
+          <div class="body">
+            <div class="topline">
+              <div class="score">Score 11</div>
+              <div class="tier">Tier 3</div>
+              <div class="search">Found in: Nike Ice Skates</div>
+            </div>
+            <a class="title" href="https://www.ebay.co.uk/itm/365548799155?_skw=nike+ice+skates&amp;hash=item551c6804b3:g:rEMAAeSw2E1oy0Vv" target="_blank" rel="noopener noreferrer">Vintage Authentic Nike Quest Gator Hockey 10EE Engineered In Canada</a>
+            <div class="meta">Total: £75.37 | Tier 3 | Score 11</div>
+            <div class="reasons">nike +3<br>size unknown +0<br>total £75.37, tier 3 ceiling £120, price &lt;= 65% of ceiling (+8)</div>
+          </div>
+        </div>
+        
+    </body>
+    </html>
+    
